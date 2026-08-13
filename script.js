@@ -53,12 +53,14 @@ function getRandomIndex(excludeIdx, arrLen) {
 }
 
 heroelempage1.addEventListener("mousemove", (dets) => {
+    const rect = heroelempage1.getBoundingClientRect();
     gsap.to(follower, {
         opacity:1,
         x: dets.x,
         y: dets.y,
         top:"0%",
         left:"0%",
+        
         duration: 0.8,
         ease: "power3.out"
     });
@@ -165,11 +167,12 @@ showcasetl1.to(".bl1", {
 showcasetl1.to(".br1", {
     x: "36vw",
     duration: 1,
+    markers:true
 }, "<");
 showcasetl1.to(".pib1", {
     width:"50vw",
     height:"65vh",
-    transform:" translate(-50%,-50%)",
+    // transform:" translate(-50%,-50%)",
 
 }, "<");
 
@@ -194,7 +197,7 @@ showcasetl1clone.to(".pib1", {
     width:"10vw",
     height:"15vh",
 
-    transform:" translate(-50%,-50%)",
+    // transform:" translate(-50%,-50%)",
 
     
 }, "<");
@@ -220,10 +223,11 @@ showcasetl2.to(".pib2", {
     width:"50vw",
     height:"65vh",
 
-    transform:" translate(-50%,-50%)",
-
+    // transform:" translate(-50%,-50%)",
+   
     
 }, "<");
+console.log(window.innerWidth, window.innerHeight);
 
 var showcasetl2clone = gsap.timeline({
     scrollTrigger: {
@@ -247,7 +251,7 @@ showcasetl2clone.to(".pib2", {
     width:"10vw",
     height:"15vh",
 
-    transform:" translate(-50%,-50%)",
+    // transform:" translate(-50%,-50%)",
 
     
 }, "<");
@@ -270,7 +274,7 @@ showcasetl3.to(".pib3", {
     width:"50vw",
     height:"65vh",
 
-    transform:" translate(-50%,-50%)",
+    // transform:" translate(-50%,-50%)",
 
     
 }, "<");
@@ -307,6 +311,7 @@ gsap.to(".page2", {
         start: "top top",
         end: "+=400",
         pin: ".page2",
+        // markers:true
        
     }
 });

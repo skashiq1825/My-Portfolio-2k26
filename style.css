@@ -110,13 +110,13 @@ body {
     width:13vw;
     height: 10vw;
     position: absolute;
-    /* background-color: red; */
+   
     background-position: center;
     
-    
-    left: 88%; 
-    top: 25%;
     transform: translate(-50%, -50%);
+    left:88%; 
+    top: 25%;
+    /* transform: translate(-50%, -50%); */
     pointer-events: none;
     opacity: 1;
     z-index: 1;
