@@ -1069,3 +1069,458 @@ body {
     display: inline-block;
     font-size: 4vw;
 }
+
+
+@media (max-width: 500px) {
+   
+    
+.page1 {
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+}
+
+.layer-page1 {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-color: rgb(37, 37, 37);
+    z-index: 19;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ai;
+    color: #b9b8b8;
+
+
+}
+
+.hello-txt {
+    width: 80vw;
+    height: 12vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.layer-page1 span {
+    display: inline-block;
+    font-size: clamp(2rem,2.3rem,2.5rem);
+}
+
+.hero-elem-page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #FEFEFE;
+   
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+}
+
+.navigation {
+    width: 100%;
+    height: 10vh;
+    /* background-color: #9c2121; */
+
+    /* position: absolute; */
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2.5vw;
+    font-family: ai;
+    position: absolute;
+    opacity: 1;
+    /* z-index: 15; */
+}
+
+.navigation h2 {
+    position: relative;
+    top: 0%;
+    left:0%;
+    transform: translate(-0%, -0%);
+    font-size: clamp(1rem,1.3rem,1.5rem);
+}
+
+.navigation h3 {
+    font-family: jost;
+    font-size: 1.2vw;
+    display: none;
+}
+.sign {
+    width: 14vw;
+    height: 65%;
+    /* background-color: rgb(9, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    left: 0%;
+    top: 1%; */
+}
+
+.signature {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation-name: fill;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+
+}
+
+
+.follower-box {
+    width: 95%;
+    height: 13vh;
+    position: absolute;
+    /* background-color: red; */
+    background-position: center;
+
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1;
+    background-size: cover;
+    background-position: 0% 25%;
+    filter: saturate(50%);
+
+    background-image: url("./assets/main-image.webp");
+    
+}
+.follower-box::before{
+    content: "[ CREATIVE DEVELOPER ]";
+    font-family: montserrat;
+    font-size: clamp(0.5rem,0.8rem,1.3rem);
+    font-weight: 400;
+    position: absolute;
+    left: 0%;
+    bottom: -0%;
+    transform: translate(-0%, 118%);
+
+}
+
+.dot-line1 {
+    display: none;
+   
+}
+.dot-line2 {
+  display: none;
+}
+
+
+.hero-txt-box {
+    width: 100%;
+    height: 20vh;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+
+.hero-txt-top {
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(80, 175, 104); */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0vw 2vw;
+    font-family: jost;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.hero-txt-top h1 {
+    font-weight: 100;
+    font-size: clamp(2rem,2.5rem,3rem);
+    
+    z-index: 3;
+    color: rgb(30, 29, 29);
+}
+
+.hero-txt-top span {
+    display: inline-block;
+}
+
+.hero-txt-bottom span {
+    display: inline-block;
+}
+
+.hero-txt-bottom {
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0vw 2vw;
+    font-family: jost;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-txt-bottom span {
+    font-weight: 100;
+    font-size: clamp(2rem,2.5rem,3rem);
+    z-index: 3;
+    color: rgb(30, 29, 29);
+
+}
+
+.hero-txt-bottom h1 {
+    font-weight: 800;
+    font-size: 7vw;
+    z-index: 3;
+    color: rgb(30, 29, 29);
+
+}
+
+.grd-box {
+    width: 25vw;
+    height: 100%;
+    /* background-color: rgb(150, 92, 92); */
+    background-image: url(./assets/front-page-blue.webp);
+    filter: saturate(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 90%;
+    margin-right: 1.5vw;
+    display: flex;
+    display: none;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.grd-box2 {
+    width: 20vw;
+    height: 100%;
+    /* background-color: rgb(150, 92, 92); */
+    background-image: url(./assets/main-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 15%;
+    margin-left: 1.5vw;
+    display: flex;
+    display: none;
+
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.page2 {
+    width: 100%;
+    background-color: #FEFEFE;
+
+    height: 220vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    top: 100vh;
+    z-index: 10;
+
+}
+
+.about-me {
+    width: 100%;
+    height: 200vh;
+    /* background-color: rgb(55, 81, 181); */
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+}
+
+.intro {
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.dp {
+    width: 80%;
+    height: 50%;
+    /* background-color: rgb(0, 255, 255); */
+    position: relative;
+    padding: 1vw;
+}
+
+.intro-txt-box {
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: ai;
+    font-size: clamp(0.8rem,1.2rem,1.5rem);
+}
+
+.intro-txt-box h5 {
+    width: 80vw;
+    /* color: #0D3B6F; */
+}
+
+.dp-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    background-image: url(./assets/main-image.webp);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: 0% 25%;
+
+}
+
+.highlight-box {
+    width: 100%;
+    height: 20vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(0.7rem,0.9rem,1.2rem);
+    font-family: jost;
+    line-height: 1.5rem;
+    padding: 0vw 3vw;
+    /* color: #0D3B6F; */
+}
+
+.highlight-box span {
+    font-weight: 200;
+    opacity: 1;
+    font-style: italic;
+    
+
+}
+
+.education {
+    width: 100%;
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: jost;
+    font-size: clamp(1rem,1.2rem,1.5rem);
+    text-align: center;
+    gap: 5vw;
+
+}
+
+.education h5 {
+    width: 80vw;
+    font-weight: 300;
+
+    
+}
+.edu{
+    font-size: clamp(1.3rem,1.5rem,1.8rem);
+    font-family: ai;
+}
+
+.skills {
+    width: 100%;
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: jost;
+    gap: 5vw;
+    text-align: center;
+
+    font-size: clamp(1rem,1.2rem,1.5rem);
+    
+}
+
+.skills h5 {
+    width: 80vw;
+    font-weight: 300;
+    
+
+}
+
+
+.outro {
+    width: 100%;
+    height: 50vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.outro-dp {
+    width: 95%;
+    height: 50%;
+    /* background-color: rgb(0, 255, 255); */
+    position: relative;
+    padding: 1vw;
+   
+}
+
+.outro-txt-box {
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: jost;
+    font-size: clamp(0.9rem,1.2rem,1.5rem);
+}
+
+.outro-txt-box h5 {
+    width: 80vw;
+    text-align: center;
+    
+
+}
+
+.outro-dp-image {
+    width: 100%;
+    height: 100%;
+    filter: saturate(10%);
+
+
+    background-color: black;
+    background-image: url(./assets/ChatGPT\ Image\ Aug\ 11\,\ 2026\,\ 11_53_36\ PM.webp);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: 0% 27%;
+
+}
+
+}
