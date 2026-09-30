@@ -105,6 +105,9 @@ body {
     opacity: 1;
     /* z-index: 15; */
 }
+#projectpagebtn{
+   cursor: pointer;
+}
 
 .navigation h2 {
     position: absolute;

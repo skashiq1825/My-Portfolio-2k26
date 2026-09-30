@@ -13,6 +13,11 @@ gsap.registerPlugin(ScrollTrigger);
 // desktop size ke liye (>=1024px) hi sab function/animations kaam karenge
 if (window.innerWidth >= 1024) {
 
+    var projectpagebtn = document.querySelector("#projectpagebtn");
+    projectpagebtn.addEventListener("click",()=>{
+        window.location.href = "projectspage.html";
+    })
+
     const follower = document.querySelector(".follower-box");
     const heroelempage1 = document.querySelector(".hero-elem-page1");
 
