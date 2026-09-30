@@ -492,7 +492,11 @@ github.addEventListener("click", () => {
 });
 
 
-if (window.innerWidth <= 500) {
+if (window.innerWidth <= 700) {
+    var projectpagebtn = document.querySelector("#projectpagebtn");
+    projectpagebtn.addEventListener("click",()=>{
+        window.location.href = "projectspage.html";
+    })
 
     const follower = document.querySelector(".follower-box");
     const heroelempage1 = document.querySelector(".hero-elem-page1");
