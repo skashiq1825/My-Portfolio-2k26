@@ -185,7 +185,7 @@ const projects = [
   let lastActive = -1;
   
   
-  // Project names
+  
   const names = projects.map(project => {
   
     const element = document.createElement("div");
@@ -199,8 +199,7 @@ const projects = [
   
   });
   
-  
-  // Allocate enough reusable cards to cover the screen
+
   function buildPool() {
   
     carousel.replaceChildren();
@@ -248,7 +247,7 @@ const projects = [
   buildPool();
   
   
-  // Wheel
+  
   window.addEventListener(
     "wheel",
     event => {
@@ -256,7 +255,7 @@ const projects = [
       event.preventDefault();
   
   
-      // Normalize wheel units
+   
       const unit =
         event.deltaMode === 1
           ? 16
@@ -275,7 +274,7 @@ const projects = [
   );
   
   
-  // Keyboard
+
   window.addEventListener(
     "keydown",
     event => {
@@ -299,8 +298,7 @@ const projects = [
     }
   );
   
-  
-  // Touch / Drag
+ 
   let touchY = null;
   
   
@@ -358,7 +356,7 @@ const projects = [
   );
   
   
-  // Animation
+ 
   let previousTime = performance.now();
   
   
@@ -374,7 +372,7 @@ const projects = [
     previousTime = now;
   
   
-    // Frame-rate-independent easing
+   
     const ease =
       1 - Math.exp(-delta / 120);
   
@@ -446,7 +444,7 @@ const projects = [
     });
   
   
-    // Update text only when selected project changes
+  
     if (activeIndex !== lastActive) {
   
       lastActive = activeIndex;
